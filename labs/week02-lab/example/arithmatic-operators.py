@@ -106,7 +106,7 @@ result4 = 10 / 2 * 3
 print(f"{expression4} = {result4}")
 print("Explanation: / and * have same precedence, evaluate left to right")
 print("So: (10 / 2) * 3 = 5.0 * 3 = 15.0")
-print()
+print("hello")
 
 # =============================================================================
 # DEMO 4: Practical Examples

@@ -25,9 +25,15 @@ if entered_pin == pin:
         print("4. Exit")
         
         choice = input("Choose option: ")
-        
-        # Complete the menu logic here
-        # Your code here:
-        
+
+        if choice == "1":
+             print("Balance ", balance ,"Bath")
+        elif choice == "2":
+             wd = float(input("Amount:"))
+        elif choice == "3":
+            dp = float(input("Amount"))
+        elif choice == "4":
+            break
+ 
 else:
     print("Invalid PIN")

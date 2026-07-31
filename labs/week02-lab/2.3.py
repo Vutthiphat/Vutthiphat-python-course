@@ -1,4 +1,4 @@
-# Shopping Calculator Template
+#shopping Calculator Template
 print("2. Time Converter:")
 print(" - Ask user for seconds")
 print(" - Convert to hours, minutes, and remaining seconds")
@@ -16,4 +16,4 @@ minutes = seconds_remain // 60
 seconds_remain = seconds_remain % 60
 
 # output
-print(f"{seconds} seconds = {hours} hour(s), {minutes} minute(s), {seconds_remain} second(s)")/
+print(f"{seconds} seconds = {hours} hour(s), {minutes} minute(s), {seconds_remain} second(s)")

@@ -1,0 +1,19 @@
+#part 2 
+#example 1
+
+
+#example 2
+
+
+#example 3
+
+
+
+def convert_currency(a,b):
+    if b == "USD"
+        print(f"{a} THB = {a / 32.0} USD")
+    else:
+    print(a, "USD = ", a * 32.0,"THB")
+
+convert_currency(100,"USD")
+convert_currency(100,"THB")

@@ -1,25 +1,40 @@
-"""
-Write a program that analyzes daily temperatures for a week:
+def get_temperatures():
+    """Returns a list of daily temperatures for a week."""
+    # Predefined temperature values for 7 days
+    temperatures = [22.5, 24.0, 28.0, 25.5, 19.0, 21.5, 24.0]
+    return temperatures
 
-Create a function get_temperatures() that:
 
-- Uses a local list to store 7 temperature values (use input or predefined values)
-- Returns the list
+def analyze_temps(temp_list):
+    """Calculates average, highest, and lowest temperatures from a list."""
+    # Local variable for average temperature
+    avg_temp = sum(temp_list) / len(temp_list)
+    high_temp = max(temp_list)
+    low_temp = min(temp_list)
 
-Create a function analyze_temps(temp_list) that:
+    # Returns all three values as a tuple
+    return avg_temp, high_temp, low_temp
 
-- Calculates and returns the average temperature (local variable)
-- Finds and returns the highest temperature
-- Finds and returns the lowest temperature
-- Returns all three values as a tuple
 
-Create a function display_analysis(avg, high, low) that prints the results nicely formatted
+def display_analysis(avg, high, low):
+    """Prints the formatted temperature analysis results."""
+    print("Temperature Analysis for the Week:")
+    print(f"Average: {avg:.1f}°C")
+    print(f"Highest: {high}°C")
+    print(f"Lowest: {low}°C")
 
-Example Output:
-Temperature Analysis for the Week:
-Average: 23.5 C
-Highest: 28 C
-Lowest: 19 C
 
-"""
+def main():
+    # Retrieve the temperatures
+    temps = get_temperatures()
+
+    # Analyze the temperature data
+    avg, high, low = analyze_temps(temps)
+
+    # Display the formatted results
+    display_analysis(avg, high, low)
+
+
+if __name__ == "__main__":
+    main()
     
